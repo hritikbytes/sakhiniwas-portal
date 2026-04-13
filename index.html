@@ -1,0 +1,1225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Sakhi Niwas</title>
+    <script src="script.js"></script>
+  </head>
+
+  <body class="min-h-screen">
+    <div class="relative z-10">
+      <header class="sticky top-0 z-50">
+        <nav class="bg-white/80 backdrop-blur border-b border-slate-200/70">
+          <div
+            class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
+          >
+            <!-- Left: Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center font-bold"
+              >
+                सN
+              </div>
+              <div class="leading-tight">
+                <p class="font-semibold text-slate-900">सखी NIWAS</p>
+                <p class="text-xs text-slate-500">Safe • Clean • Affordable</p>
+              </div>
+            </a>
+
+            <!-- Center Links -->
+            <ul
+              class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-700"
+            >
+              <li>
+                <a href="index.html" class="hover:text-slate-900">Home</a>
+              </li>
+              <li>
+                <a href="rooms.html" class="hover:text-slate-900">Rooms</a>
+              </li>
+              <li>
+                <a href="facilities.html" class="hover:text-slate-900"
+                  >Facilities</a
+                >
+              </li>
+              <li>
+                <a href="gallery.html" class="hover:text-slate-900">Gallery</a>
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-slate-900">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Right CTA -->
+            <div class="hidden md:flex items-center gap-3">
+              <a
+                href="https://wa.me/919999999999"
+                target="_blank"
+                class="px-4 py-2 rounded-xl border border-slate-300 text-slate-900 font-semibold hover:bg-white transition"
+              >
+                WhatsApp
+              </a>
+              <a
+                href="tel:+919999999999"
+                class="px-4 py-2 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition"
+              >
+                Call Now
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="relative overflow-hidden pt-20 pb-32">
+          <!-- Background Decor -->
+
+          <div
+            class="max-w-7xl mx-auto px-4 flex flex-col items-center text-center relative z-10"
+          >
+            <!-- Main Heading -->
+            <h1
+              class="text-6xl md:text-8xl lg:text-9xl font-extrabold text-slate-900 tracking-tight leading-[0.9] text-balance mb-8 animate-fade-in-up animation-delay-150"
+            >
+              Comfort,
+              <span class="font-satisfy text-rose-500 relative">
+                Safety
+                <svg
+                  class="absolute -bottom-2 w-full h-3 text-rose-200 -z-10 left-0"
+                  viewBox="0 0 100 10"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M0 5 Q 50 10 100 5"
+                    stroke="currentColor"
+                    stroke-width="8"
+                    fill="none"
+                  />
+                </svg> </span
+              ><br class="hidden md:block" />
+              & a
+              <span class="font-satisfy text-rose-500 relative"
+                >Place
+                <svg
+                  class="absolute -bottom-1 w-full h-3 text-rose-200 -z-10 left-0"
+                  viewBox="0 0 100 10"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M0 5 Q 50 10 100 5"
+                    stroke="currentColor"
+                    stroke-width="8"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+              to Belong
+            </h1>
+
+            <!-- Subtext -->
+            <p
+              class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed mb-12 text-balance animate-fade-in-up animation-delay-300"
+            >
+              Where modern living meets the warmth of home. Experience the
+              perfect blend of freedom, security, and community.
+            </p>
+
+            <!-- Buttons -->
+            <div
+              class="flex flex-col sm:flex-row items-center gap-4 animate-fade-in-up animation-delay-450"
+            >
+              <button
+                class="group relative px-8 py-4 rounded-full bg-slate-900 text-white font-bold text-lg shadow-xl shadow-slate-900/10 hover:shadow-2xl hover:shadow-rose-500/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+                onclick="window.location.href = 'contact.html'"
+              >
+                <div
+                  class="absolute inset-0 w-full h-full bg-rose-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <span class="relative flex items-center gap-2">
+                  Enquire Now
+                  <svg
+                    class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+
+              <a
+                href="rooms.html"
+                class="px-8 py-4 rounded-full bg-white text-slate-700 font-bold text-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all duration-300"
+              >
+                View Rooms
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- CSS for custom animations (inline for simplicity) -->
+        <style>
+          @keyframes blob {
+            0% {
+              transform: translate(0px, 0px) scale(1);
+            }
+            33% {
+              transform: translate(30px, -50px) scale(1.1);
+            }
+            66% {
+              transform: translate(-20px, 20px) scale(0.9);
+            }
+            100% {
+              transform: translate(0px, 0px) scale(1);
+            }
+          }
+          .animate-blob {
+            animation: blob 7s infinite;
+          }
+          .animation-delay-2000 {
+            animation-delay: 2s;
+          }
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+          }
+          .animation-delay-150 {
+            animation-delay: 0.15s;
+          }
+          .animation-delay-300 {
+            animation-delay: 0.3s;
+          }
+          .animation-delay-450 {
+            animation-delay: 0.45s;
+          }
+        </style>
+        <section class="max-w-7xl mx-auto px-4 py-8">
+          <!-- Section Header -->
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10"
+          >
+            <div>
+              <h2 class="text-4xl md:text-5xl font-bold text-slate-800">
+                Life at
+                <span class="font-satisfy text-rose-500">Sakhi Niwas</span>
+              </h2>
+              <p class="mt-4 text-slate-600 max-w-xl text-lg">
+                More than just a hostel. It's a community where friendships
+                mimic family and every corner tells a story.
+              </p>
+            </div>
+
+            <a
+              href="gallery.html"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-900 text-white font-semibold hover:bg-slate-800 transition shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform duration-300"
+            >
+              View Gallery
+              <span>→</span>
+            </a>
+          </div>
+
+          <!-- Collage Grid (Bento/Masonry Style) -->
+          <!-- We use a 12-column grid. Each column is 4 'units' wide on LG screens. -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 auto-rows-[180px]"
+          >
+            <!-- 1. Top Left (Short: Span 2 Rows) -->
+            <div
+              class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-1 lg:row-start-1 row-span-2 rounded-[32px] overflow-hidden"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Friends"
+                class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              />
+            </div>
+
+            <!-- 2. Top Center (Tall: Span 3 Rows) -->
+            <!-- This dominates the center -->
+            <div
+              class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-5 lg:row-start-1 row-span-3 md:row-span-2 lg:row-span-3 rounded-[32px] overflow-hidden"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Music"
+                class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              />
+            </div>
+
+            <!-- 3. Top Right (Short: Span 2 Rows) -->
+            <div
+              class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-9 lg:row-start-1 row-span-2 rounded-[32px] overflow-hidden"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Drinks"
+                class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              />
+            </div>
+
+            <!-- 4. Bottom Left (Tall: Span 3 Rows) -->
+            <!-- Explicit col-start-1 to keep it in col 1 under item 1 -->
+            <div
+              class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-1 lg:row-start-3 row-span-3 md:row-span-2 lg:row-span-3 rounded-[32px] overflow-hidden"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Study"
+                class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              />
+            </div>
+
+            <!-- 5. Bottom Center (Short: Span 2 Rows) -->
+            <!-- Explicit col-start-5 to keep it in col 2 under item 2 -->
+            <div
+              class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-5 lg:row-start-4 row-span-2 rounded-[32px] overflow-hidden"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Community"
+                class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              />
+            </div>
+
+            <!-- 6. Bottom Right (Tall: Span 3 Rows) -->
+            <!-- Explicit col-start-9 to keep it in col 3 under item 3 -->
+            <div
+              class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-9 lg:row-start-3 row-span-2 md:row-span-2 lg:row-span-3 rounded-[32px] overflow-hidden"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Yoga"
+                class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-4 py-24 relative overflow-hidden">
+          <!-- Decorative background elements -->
+          <div
+            class="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-slate-200/50 rounded-full blur-[120px] -z-10"
+          ></div>
+
+          <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+              Why Choose
+              <span class="font-satisfy text-rose-500">Sakhi Niwas</span>?
+            </h2>
+            <p class="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+              We don't just provide a bed; we provide a sanctuary. Designed for
+              comfort, safety, and the ambitious spirit within you.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div
+              class="group bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-24 h-24 mb-6 rounded-2xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="assets/location.svg"
+                  alt="Location"
+                  class="object-contain"
+                />
+              </div>
+              <h4 class="text-xl font-bold text-slate-800 mb-3">
+                Central Location
+              </h4>
+              <p class="text-slate-500 leading-relaxed">
+                Steps from everything you want to explore—food, culture, and
+                nightlife, all within easy walking distance.
+              </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div
+              class="group bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-24 h-24 mb-6 rounded-2xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="assets/common.svg"
+                  alt="Common Area"
+                  class="object-contain"
+                />
+              </div>
+              <h4 class="text-xl font-bold text-slate-800 mb-3">
+                Cozy Common Areas
+              </h4>
+              <p class="text-slate-500 leading-relaxed">
+                Designed for connection. Relax, unwind, and make lifelong
+                memories in our warm, shared living spaces.
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div
+              class="group bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-24 h-24 mb-6 rounded-2xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="assets/cleanliness.svg"
+                  alt="Hygiene"
+                  class="object-contain"
+                />
+              </div>
+              <h4 class="text-xl font-bold text-slate-800 mb-3">
+                Pristine Hygiene
+              </h4>
+              <p class="text-slate-500 leading-relaxed">
+                Daily housekeeping and meticulously maintained spaces to keep
+                your environment fresh, neat, and inspiring.
+              </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div
+              class="group bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-24 h-24 mb-6 rounded-2xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <img src="assets/food.svg" alt="Food" class="object-contain" />
+              </div>
+              <h4 class="text-xl font-bold text-slate-800 mb-3">
+                Homestyle Meals
+              </h4>
+              <p class="text-slate-500 leading-relaxed">
+                Nutritious, delicious meals prepared with care because good food
+                is the foundation of a happy hostel life.
+              </p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div
+              class="group bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-24 h-24 mb-6 rounded-2xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="assets/security.svg"
+                  alt="Security"
+                  class="object-contain"
+                />
+              </div>
+              <h4 class="text-xl font-bold text-slate-800 mb-3">
+                24/7 Safety First
+              </h4>
+              <p class="text-slate-500 leading-relaxed">
+                CCTV coverage, secure biometric entry, and a guarded environment
+                so you can live positively stress-free.
+              </p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div
+              class="group bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-24 h-24 mb-6 rounded-2xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+              >
+                <img
+                  src="assets/study.svg"
+                  alt="Study"
+                  class="object-contain"
+                />
+              </div>
+              <h4 class="text-xl font-bold text-slate-800 mb-3">
+                WiFi & Study Space
+              </h4>
+              <p class="text-slate-500 leading-relaxed">
+                Blazing fast internet for your online classes plus a peaceful
+                atmosphere to focus and grow.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          id="feedback"
+          class="py-24 bg-slate-50 relative overflow-hidden"
+        >
+          <!-- Header -->
+          <div class="max-w-7xl mx-auto px-4 mb-16 text-center">
+            <p
+              class="text-sm font-semibold tracking-wide uppercase text-rose-500 mb-2"
+            >
+              Student Stories
+            </p>
+            <h2 class="text-4xl md:text-6xl font-bold text-slate-800 mb-6">
+              Loved by <span class="font-satisfy text-rose-500">Residents</span>
+            </h2>
+            <p class="text-slate-600 text-lg max-w-2xl mx-auto">
+              Don't just take our word for it. Hear from the students and
+              professionals who call Sakhi Niwas home.
+            </p>
+          </div>
+
+          <!-- Infinite Marquee Container -->
+          <!-- We use a mask-image to fade the edges for a premium feel -->
+          <div class="relative w-full overflow-hidden mask-gradient">
+            <!-- The inner track that moves -->
+            <!-- We duplicate the content to create a seamless loop -->
+            <div class="flex w-max gap-8 animate-scroll">
+              <!-- ORIGINAL SET OF CARDS -->
+              <!-- Card 1 -->
+              <div
+                class="w-[350px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-[32px] shadow-sm border border-slate-100 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    ★★★★★
+                  </div>
+                  <p class="text-slate-700 text-lg leading-relaxed font-medium">
+                    "The rooms are clean and the environment feels very safe.
+                    Food quality is good and the staff is supportive."
+                  </p>
+                </div>
+                <div class="flex items-center gap-4 mt-8">
+                  <div
+                    class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 font-bold text-xl"
+                  >
+                    A
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900">Ananya Sharma</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">
+                      Student • Ranchi
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 (Dark Highlight) -->
+              <div
+                class="w-[350px] md:w-[400px] flex-shrink-0 bg-slate-900 p-8 rounded-[32px] shadow-xl flex flex-col justify-between relative overflow-hidden text-white"
+              >
+                <div
+                  class="absolute top-0 right-0 w-32 h-32 bg-rose-500/20 blur-[60px] rounded-full -mr-10 -mt-10"
+                ></div>
+                <div class="relative z-10">
+                  <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    ★★★★★
+                  </div>
+                  <p class="text-white/90 text-lg leading-relaxed font-medium">
+                    "Best PG experience so far. Safe, clean and comfortable. The
+                    community here is really friendly."
+                  </p>
+                </div>
+                <div class="flex items-center gap-4 mt-8 relative z-10">
+                  <div
+                    class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white font-bold text-xl"
+                  >
+                    S
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white">Sneha Verma</h4>
+                    <p class="text-xs text-white/60 uppercase tracking-wider">
+                      Student • 8 Months
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="w-[350px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-[32px] shadow-sm border border-slate-100 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    ★★★★★
+                  </div>
+                  <p class="text-slate-700 text-lg leading-relaxed font-medium">
+                    "Peaceful atmosphere, great WiFi, and housekeeping is
+                    regular. I love the overall vibe."
+                  </p>
+                </div>
+                <div class="flex items-center gap-4 mt-8">
+                  <div
+                    class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-xl"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900">Priya Kumari</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">
+                      Working Professional
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="w-[350px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-[32px] shadow-sm border border-slate-100 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    ★★★★★
+                  </div>
+                  <p class="text-slate-700 text-lg leading-relaxed font-medium">
+                    "Loved the hygiene and the security. Location is also
+                    convenient. It feels like home."
+                  </p>
+                </div>
+                <div class="flex items-center gap-4 mt-8">
+                  <div
+                    class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold text-xl"
+                  >
+                    R
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900">Riya Singh</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">
+                      Student
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DUPLICATE SET FOR LOOP (Exact copy of above) -->
+
+              <!-- Card 1 Copy -->
+              <div
+                class="w-[350px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-[32px] shadow-sm border border-slate-100 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    ★★★★★
+                  </div>
+                  <p class="text-slate-700 text-lg leading-relaxed font-medium">
+                    "The rooms are clean and the environment feels very safe.
+                    Food quality is good and the staff is supportive."
+                  </p>
+                </div>
+                <div class="flex items-center gap-4 mt-8">
+                  <div
+                    class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 font-bold text-xl"
+                  >
+                    A
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900">Ananya Sharma</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">
+                      Student • Ranchi
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 Copy -->
+              <div
+                class="w-[350px] md:w-[400px] flex-shrink-0 bg-slate-900 p-8 rounded-[32px] shadow-xl flex flex-col justify-between relative overflow-hidden text-white"
+              >
+                <div
+                  class="absolute top-0 right-0 w-32 h-32 bg-rose-500/20 blur-[60px] rounded-full -mr-10 -mt-10"
+                ></div>
+                <div class="relative z-10">
+                  <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    ★★★★★
+                  </div>
+                  <p class="text-white/90 text-lg leading-relaxed font-medium">
+                    "Best PG experience so far. Safe, clean and comfortable. The
+                    community here is really friendly."
+                  </p>
+                </div>
+                <div class="flex items-center gap-4 mt-8 relative z-10">
+                  <div
+                    class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white font-bold text-xl"
+                  >
+                    S
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white">Sneha Verma</h4>
+                    <p class="text-xs text-white/60 uppercase tracking-wider">
+                      Student • 8 Months
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 Copy -->
+              <div
+                class="w-[350px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-[32px] shadow-sm border border-slate-100 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    ★★★★★
+                  </div>
+                  <p class="text-slate-700 text-lg leading-relaxed font-medium">
+                    "Peaceful atmosphere, great WiFi, and housekeeping is
+                    regular. I love the overall vibe."
+                  </p>
+                </div>
+                <div class="flex items-center gap-4 mt-8">
+                  <div
+                    class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold text-xl"
+                  >
+                    P
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900">Priya Kumari</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">
+                      Working Professional
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 Copy -->
+              <div
+                class="w-[350px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-[32px] shadow-sm border border-slate-100 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    ★★★★★
+                  </div>
+                  <p class="text-slate-700 text-lg leading-relaxed font-medium">
+                    "Loved the hygiene and the security. Location is also
+                    convenient. It feels like home."
+                  </p>
+                </div>
+                <div class="flex items-center gap-4 mt-8">
+                  <div
+                    class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold text-xl"
+                  >
+                    R
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900">Riya Singh</h4>
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">
+                      Student
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inline Styles for Animation (Simulating Tailwind Config) -->
+          <style>
+            .mask-gradient {
+              mask-image: linear-gradient(
+                to right,
+                transparent,
+                black 10%,
+                black 90%,
+                transparent
+              );
+              -webkit-mask-image: linear-gradient(
+                to right,
+                transparent,
+                black 10%,
+                black 90%,
+                transparent
+              );
+            }
+
+            @keyframes scroll {
+              from {
+                transform: translateX(0);
+              }
+
+              to {
+                transform: translateX(-50%);
+              }
+
+              /* Move exactly half way because the second half is a duplicate of the first */
+            }
+
+            .animate-scroll {
+              animation: scroll 40s linear infinite;
+            }
+
+            .animate-scroll:hover {
+              animation-play-state: paused;
+            }
+          </style>
+        </section>
+        <section class="max-w-7xl mx-auto px-4 py-24" id="rooms">
+          <div class="text-center mb-16">
+            <p
+              class="text-sm font-semibold tracking-wide uppercase text-rose-500 mb-2"
+            >
+              Accommodations
+            </p>
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+              Choose Your <span class="font-satisfy text-rose-500">Space</span>
+            </h2>
+            <p class="text-slate-600 text-lg max-w-2xl mx-auto">
+              Whether you prefer a bit more privacy or a lively group dynamic,
+              we have the perfect room for your budget.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+            <!-- Room Option 1: Double Sharing -->
+            <div
+              class="group bg-white rounded-[32px] border border-slate-200 overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Double Usage Room"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md"
+                >
+                  MOST POPULAR
+                </div>
+              </div>
+              <div class="p-8 flex-1 flex flex-col">
+                <div class="flex justify-between items-start mb-4">
+                  <div>
+                    <h3 class="text-2xl font-bold text-slate-900">
+                      Double Comfort
+                    </h3>
+                    <p class="text-slate-500 text-sm">
+                      Twin Sharing • More Privacy
+                    </p>
+                  </div>
+                  <div class="text-right">
+                    <p class="text-3xl font-bold text-slate-900">₹12,500</p>
+                    <p class="text-slate-400 text-xs">/ person / month</p>
+                  </div>
+                </div>
+
+                <hr class="border-slate-100 my-6" />
+
+                <ul class="space-y-3 mb-8 flex-1 text-slate-600">
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>Spacious Personal Wardrobe</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>Air Conditioning (Optional)</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>Attached Premium Washroom</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>Study Table & Chair</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>All Meals Included</span>
+                  </li>
+                </ul>
+
+                <a
+                  href="contact.html"
+                  class="block text-center w-full py-4 rounded-xl bg-slate-900 text-white font-bold hover:bg-slate-800 transition-colors shadow-lg shadow-slate-900/20"
+                >
+                  Enquire Now
+                </a>
+              </div>
+            </div>
+
+            <!-- Room Option 2: Triple Sharing -->
+            <div
+              class="group bg-white rounded-[32px] border border-slate-200 overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Triple Usage Room"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md"
+                >
+                  BEST VALUE
+                </div>
+              </div>
+              <div class="p-8 flex-1 flex flex-col">
+                <div class="flex justify-between items-start mb-4">
+                  <div>
+                    <h3 class="text-2xl font-bold text-slate-900">
+                      Triple Social
+                    </h3>
+                    <p class="text-slate-500 text-sm">
+                      Triple Sharing • Best Vibe
+                    </p>
+                  </div>
+                  <div class="text-right">
+                    <p class="text-3xl font-bold text-slate-900">₹10,000</p>
+                    <p class="text-slate-400 text-xs">/ person / month</p>
+                  </div>
+                </div>
+
+                <hr class="border-slate-100 my-6" />
+
+                <ul class="space-y-3 mb-8 flex-1 text-slate-600">
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>Individual Storage Unit</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>Bright & Airy Ventilation</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>Attached Standard Washroom</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>High-Speed WiFi Access</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <svg
+                      class="w-5 h-5 text-emerald-500 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    <span>All Meals Included</span>
+                  </li>
+                </ul>
+
+                <a
+                  href="contact.html"
+                  class="block text-center w-full py-4 rounded-xl border-2 border-slate-900 text-slate-900 font-bold hover:bg-slate-900 hover:text-white transition-colors"
+                >
+                  Enquire Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-4 py-24">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="order-2 lg:order-1">
+              <p
+                class="text-sm font-semibold tracking-wide uppercase text-rose-500 mb-2"
+              >
+                Find Us
+              </p>
+              <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+                Prime <span class="font-satisfy text-rose-500">Location</span>
+              </h2>
+              <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                Located in the heart of Ranchi, Sakhi Niwas offers the perfect
+                balance of peaceful living and easy access to the city's best
+                education and hangout spots.
+              </p>
+
+              <div class="space-y-6 mb-8">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-xl"
+                  >
+                    📍
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900">Address</h4>
+                    <p class="text-slate-500">
+                      Near Kiddy Clouds Play School,<br />Ranchi, Jharkhand
+                      834001
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 rounded-full bg-rose-50 flex items-center justify-center text-xl"
+                  >
+                    🚶‍♀
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-slate-900">Nearby Landmarks</h4>
+                    <ul class="text-slate-500 text-sm space-y-1 mt-1">
+                      <li>• 5 mins to Main Market</li>
+                      <li>• 10 mins to City College</li>
+                      <li>• Walking distance to Public Transport</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="https://maps.google.com/?q=Sakhi+Niwas+Ranchi"
+                target="_blank"
+                class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-slate-900 text-white font-bold hover:bg-slate-800 hover:-translate-y-1 transition-all shadow-lg shadow-slate-900/20"
+              >
+                <span>Get Directions on Maps</span>
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Map Visual -->
+            <div class="order-1 lg:order-2">
+              <div
+                class="bg-white p-2 rounded-[32px] shadow-2xl border border-slate-100 rotate-1 hover:rotate-0 transition-transform duration-500"
+              >
+                <div
+                  class="rounded-[28px] overflow-hidden h-[400px] w-full relative z-10"
+                >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117234.35762825343!2d85.1641218972656!3d23.331221999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1457af7838f%3A0xbebb6802557be988!2sKiddy%20Clouds%20Play%20School!5e0!3m2!1sen!2sin!4v1769339869483!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="bg-slate-900 text-white pt-20 pb-10 rounded-t-[40px] mt-20 relative z-10"
+      >
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid md:grid-cols-4 gap-12 mb-16">
+            <!-- Brand -->
+            <div class="col-span-1 md:col-span-2">
+              <h2 class="text-3xl font-bold mb-4">
+                Sakhi <span class="font-satisfy text-rose-500">Niwas</span>
+              </h2>
+              <p class="text-slate-400 leading-relaxed max-w-sm">
+                More than just a hostel, it's a home away from home. Safe,
+                comfortable, and vibrant living spaces designed for ambitions to
+                thrive.
+              </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h4 class="font-bold text-lg mb-6">Explore</h4>
+              <ul class="space-y-4 text-slate-400">
+                <li>
+                  <a
+                    href="index.html"
+                    class="hover:text-rose-500 transition-colors"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="rooms.html"
+                    class="hover:text-rose-500 transition-colors"
+                    >Accommodations</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#feedback"
+                    class="hover:text-rose-500 transition-colors"
+                    >Student Stories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="hover:text-rose-500 transition-colors"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+              <h4 class="font-bold text-lg mb-6">Visit Us</h4>
+              <ul class="space-y-4 text-slate-400">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1">📍</span>
+                  <span
+                    >Near City College,<br />Main Road, Ranchi - 834001</span
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <span>📞</span>
+                  <span>+91 98765 43210</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span>✉️</span>
+                  <span>hello@sakhiniwas.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+          >
+            <p class="text-slate-500 text-sm">
+              © 2026 Sakhi Niwas. All rights reserved.
+            </p>
+            <div class="flex gap-6">
+              <a
+                href="#"
+                class="text-slate-400 hover:text-white transition-colors"
+                >Instagram</a
+              >
+              <a
+                href="#"
+                class="text-slate-400 hover:text-white transition-colors"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

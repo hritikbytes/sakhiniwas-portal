@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Sakhi Niwas</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <div class="relative z-10">
+    <header class="sticky top-0 z-50">
+      <nav class="bg-white/80 backdrop-blur border-b border-slate-200/70">
+        <div
+          class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
+        >
+          <!-- Left: Logo -->
+          <a href="index.html" class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center font-bold"
+            >
+              सN
+            </div>
+            <div class="leading-tight">
+              <p class="font-semibold text-slate-900">सखी NIWAS</p>
+              <p class="text-xs text-slate-500">Safe • Clean • Affordable</p>
+            </div>
+          </a>
+
+          <!-- Center Links -->
+          <ul
+            class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-700"
+          >
+            <li>
+              <a href="index.html" class="hover:text-slate-900">Home</a>
+            </li>
+            <li>
+              <a href="rooms.html" class="hover:text-slate-900">Rooms</a>
+            </li>
+            <li>
+              <a href="facilities.html" class="hover:text-slate-900"
+                >Facilities</a
+              >
+            </li>
+            <li>
+              <a href="gallery.html" class="hover:text-slate-900">Gallery</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-slate-900">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right CTA -->
+          <div class="hidden md:flex items-center gap-3">
+            <a
+              href="https://wa.me/919999999999"
+              target="_blank"
+              class="px-4 py-2 rounded-xl border border-slate-300 text-slate-900 font-semibold hover:bg-white transition"
+            >
+              WhatsApp
+            </a>
+            <a
+              href="tel:+919999999999"
+              class="px-4 py-2 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition"
+            >
+              Call Now
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+            Our
+            <span class="font-satisfy text-rose-500">Gallery</span>
+          </h2>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            Take a visual tour of our spaces. Explore our premium facilities,
+            cozy rooms, and the vibrant environment we've built for you.
+          </p>
+        </div>
+
+        <!-- Collage Grid (Bento/Masonry Style) -->
+        <!-- We use a 12-column grid. Each column is 4 'units' wide on LG screens. -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 auto-rows-[180px]"
+        >
+          <!-- 1. Top Left (Short: Span 2 Rows) -->
+          <div
+            class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-1 lg:row-start-1 row-span-2 rounded-[32px] overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Friends"
+              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- 2. Top Center (Tall: Span 3 Rows) -->
+          <!-- This dominates the center -->
+          <div
+            class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-5 lg:row-start-1 row-span-3 md:row-span-2 lg:row-span-3 rounded-[32px] overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Music"
+              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- 3. Top Right (Short: Span 2 Rows) -->
+          <div
+            class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-9 lg:row-start-1 row-span-2 rounded-[32px] overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Drinks"
+              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- 4. Bottom Left (Tall: Span 3 Rows) -->
+          <!-- Explicit col-start-1 to keep it in col 1 under item 1 -->
+          <div
+            class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-1 lg:row-start-3 row-span-3 md:row-span-2 lg:row-span-3 rounded-[32px] overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Study"
+              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- 5. Bottom Center (Short: Span 2 Rows) -->
+          <!-- Explicit col-start-5 to keep it in col 2 under item 2 -->
+          <div
+            class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-5 lg:row-start-4 row-span-2 rounded-[32px] overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Community"
+              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- 6. Bottom Right (Tall: Span 3 Rows) -->
+          <!-- Explicit col-start-9 to keep it in col 3 under item 3 -->
+          <div
+            class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-9 lg:row-start-3 row-span-2 md:row-span-2 lg:row-span-3 rounded-[32px] overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Yoga"
+              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-slate-900 text-white pt-20 pb-10 rounded-t-[40px] mt-20 relative z-10"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <!-- Brand -->
+          <div class="col-span-1 md:col-span-2">
+            <h2 class="text-3xl font-bold mb-4">
+              Sakhi <span class="font-satisfy text-rose-500">Niwas</span>
+            </h2>
+            <p class="text-slate-400 leading-relaxed max-w-sm">
+              More than just a hostel, it's a home away from home. Safe,
+              comfortable, and vibrant living spaces designed for ambitions to
+              thrive.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Explore</h4>
+            <ul class="space-y-4 text-slate-400">
+              <li>
+                <a href="index.html" class="hover:text-rose-500 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="rooms.html" class="hover:text-rose-500 transition-colors"
+                  >Accommodations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#feedback"
+                  class="hover:text-rose-500 transition-colors"
+                  >Student Stories</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-rose-500 transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Visit Us</h4>
+            <ul class="space-y-4 text-slate-400">
+              <li class="flex items-start gap-3">
+                <span class="mt-1">📍</span>
+                <span>Near City College,<br />Main Road, Ranchi - 834001</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span>📞</span>
+                <span>+91 98765 43210</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span>✉️</span>
+                <span>hello@sakhiniwas.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-slate-500 text-sm">
+            © 2024 Sakhi Niwas. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a
+              href="#"
+              class="text-slate-400 hover:text-white transition-colors"
+              >Instagram</a
+            >
+            <a
+              href="#"
+              class="text-slate-400 hover:text-white transition-colors"
+              >WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>

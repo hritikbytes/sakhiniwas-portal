@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-satisfy: "Satisfy", cursive;
+  --font-lato: "Lato", sans-serif;
+}
+
+/* Global background grid overlay (Racepoint-style) */
+:root {
+  --grid-bg: #f6f1ef; /* base background */
+  --grid-line: rgba(239, 68, 68, 0.18); /* vertical line color */
+  --grid-row: rgba(239, 68, 68, 0.08); /* horizontal line color */
+  --grid-col-width: 96px; /* column spacing */
+  --grid-row-height: 72px; /* row spacing */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--grid-bg);
+}
+
+/* The overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.3; /* overall grid visibility */
+
+  background-image:
+    /* vertical columns */ repeating-linear-gradient(
+    to right,
+    rgba(239, 68, 68, 0.1) 0px,
+    rgba(239, 68, 68, 0.1) 40px,
+    transparent 40px,
+    transparent var(--grid-col-width)
+  );
+}
