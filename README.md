@@ -22,7 +22,7 @@
 - **Tools:** Tailwind CLI, NPM, Git
 
 ## 📦 Installation & Setup
-1. **Clone the repo:** `git clone https://github.com/hritikbytes/hostelwebsite.git`
+1. **Clone the repo:** `git clone https://github.com/hritikbytes/sakhiniwas-portal.git`
 2. **Install dependencies:** `npm install`
 3. **Run the app:** `npm run dev` (This will initialize the Tailwind CLI build compiler and watch for changes)
 4. **Build for production:** `npm run build`
