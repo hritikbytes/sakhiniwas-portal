@@ -4,11 +4,9 @@ A responsive website for Sakhi Niwas, a student and working women's hostel in Ra
 
 **Live:** https://sakhiniwas-portal.vercel.app/
 
-| Desktop | Mobile |
+| Desktop Home | Mobile View |
 |:---:|:---:|
-| | |
-
-## What it does
+| ![Landing Page](./screenshots/home.png) | ![Mobile Facilities](./screenshots/mobile.png) |
 
 The site gives prospective residents a quick way to explore the hostel, compare room options, view facilities and photos, check the location, and send an enquiry.
 
