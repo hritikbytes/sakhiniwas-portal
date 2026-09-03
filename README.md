@@ -1,380 +1,94 @@
-# 🏠 Sakhi Niwas Hostel Website
+# Sakhi Niwas Hostel Portal
 
-> An independently developed responsive hostel website exploring modern UI design, Tailwind CSS, CSS-driven animations, serverless form handling, and performance-focused frontend development.
+A responsive multi-page website and accommodation brochure for Sakhi Niwas, a student and working women's hostel based in Ranchi, Jharkhand.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://sakhiniwas-portal.vercel.app/)
-[![License](https://img.shields.io/badge/License-Proprietary-red.svg?style=for-the-badge)](LICENSE)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Lottie](https://img.shields.io/badge/Lottie-Animations-00DDB3?style=for-the-badge)](https://lottiefiles.com/)
-[![Formspree](https://img.shields.io/badge/Formspree-Forms-FF6B6B?style=for-the-badge)](https://formspree.io/)
+**Live Demo:** [https://sakhiniwas-portal.vercel.app](https://sakhiniwas-portal.vercel.app)
 
-🔗 **Live Demo:** [sakhiniwas-portal.vercel.app](https://sakhiniwas-portal.vercel.app/)
+---
+
+## Preview
+
+| Desktop Home | Mobile View |
+|:---:|:---:|
+| ![Landing Page](./screenshots/home.png) | ![Mobile Facilities](./screenshots/mobile.png) |
 
 ---
 
 ## Overview
 
-Sakhi Niwas is an independently developed frontend project designed around a modern hostel and accommodation experience for students and working professionals.
+This project is a digital brochure and enquiry portal built to showcase the hostel's rooms, facilities, location, and student life. Visitors can check accommodation rates, see animated amenities, view photos, get map directions, and submit an enquiry directly to the hostel management.
 
-The project focuses on creating a polished, responsive interface without relying on a JavaScript UI framework.
-
-It combines semantic HTML, Tailwind CSS, CSS animations, Lottie illustrations, responsive layouts, and serverless form handling to create an interactive experience while keeping the frontend architecture lightweight.
-
-The project was built as a personal exercise in responsive design, CSS architecture, animation systems, accessibility-conscious UI patterns, and third-party service integration.
-
----
-
-## 📸 Preview
-
-| Home Page | Features & Facilities |
-|:---:|:---:|
-| ![Sakhi Niwas home page](./screenshots/home.png) | ![Sakhi Niwas facilities](./screenshots/mobile.png) |
+### Pages & Sections
+- **Home (`index.html`)**: Hero presentation, photo collage, highlight cards, CSS marquee testimonials, room pricing preview, and Google Maps embed.
+- **Rooms (`rooms.html`)**: Detailed breakdowns for Double Sharing (₹12,500/mo) and Triple Sharing (₹10,000/mo) accommodations including inclusions and amenities.
+- **Facilities (`facilities.html`)**: Grid of 12 hostel amenities (24/7 CCTV, doctor on call, RO water, WiFi, power backup, etc.) animated with Lottie JSON players.
+- **Gallery (`gallery.html`)**: Bento-style photo grid of hostel living spaces and student activities.
+- **Contact (`contact.html`)**: Contact details, direct WhatsApp/Call links, and a functional enquiry form connected to Formspree.
 
 ---
 
-## ✨ Core Features
+## Tech Stack
 
-### 🏠 Responsive Hostel Experience
-
-- Responsive desktop, tablet, and mobile layouts
-- Modern accommodation-focused visual design
-- Structured sections for facilities and services
-- Responsive navigation and content layouts
-- Mobile-first layout considerations
-
-### ✨ CSS-Driven Animations
-
-- Infinite testimonial marquee
-- Custom CSS keyframes
-- Ambient glow effects
-- Hover interactions
-- Smooth transitions
-- Faded marquee edges using CSS masking
-
-The testimonial marquee is implemented primarily through CSS animation rather than continuous JavaScript updates.
-
-### 🎨 Modern UI Design
-
-- Tailwind CSS utility architecture
-- Glassmorphism-inspired components
-- Background blur effects
-- Ambient lighting and glow effects
-- Custom responsive layouts
-- Masonry-style content arrangements
-- Lottie-based visual elements
-
-### 📩 Serverless Contact Handling
-
-The inquiry/contact functionality uses Formspree to handle form submissions without requiring a dedicated backend.
-
-This keeps the project lightweight while still providing a functional inquiry workflow.
+- **Markup & Layout:** HTML5 (multi-page structure)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) via `@tailwindcss/cli`
+- **Typography:** Google Fonts (*Lato* and *Satisfy*)
+- **Scripting:** Vanilla JavaScript (`script.js` for mobile menu toggle and accessibility)
+- **Animations:** [LottieFiles Web Player](https://lottiefiles.com/) for lightweight SVG vector animations
+- **Form Handling:** [Formspree](https://formspree.io/) for serverless form submissions
+- **Deployment:** [Vercel](https://vercel.com/) (automatic builds configured via `vercel.json`)
 
 ---
 
-## 🏗️ Frontend Architecture
+## Implementation Details
 
-The project deliberately avoids a frontend JavaScript framework and instead uses browser-native technologies with Tailwind CSS.
-
-```text
-                         ┌─────────────────────┐
-                         │       Browser       │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │       HTML5         │
-                         │  Semantic Structure │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │    Tailwind CSS     │
-                         │                     │
-                         │ Layout              │
-                         │ Responsive Design   │
-                         │ Components          │
-                         │ Animations          │
-                         └──────────┬──────────┘
-                                    │
-                    ┌───────────────┼────────────────┐
-                    │               │                │
-                    ▼               ▼                ▼
-             ┌───────────┐   ┌────────────┐   ┌─────────────┐
-             │  Lottie   │   │ Formspree  │   │ CSS Engine  │
-             │ Animation │   │   Forms    │   │ Animations  │
-             └───────────┘   └────────────┘   └─────────────┘
-```
+- **Static Multi-Page Architecture:** For an informational brochure and booking enquiry site, static HTML with Tailwind CSS delivers instant page loads and zero JavaScript bundle overhead compared to a heavy client-side SPA.
+- **CSS-Only Testimonial Marquee:** The resident reviews on the home page use a pure CSS `@keyframes` translate animation across duplicate card sets. A CSS `mask-image` gradient creates smooth edge fade-outs, and the marquee pauses on `:hover`.
+- **Accessible Mobile Navigation:** A lightweight vanilla JavaScript toggle manages `aria-expanded` and `aria-hidden` attributes, closes when tapping outside or pressing Escape, and automatically hides after clicking a link.
 
 ---
 
-## 🔄 Inquiry Flow
+## Local Setup & Development
 
-The contact functionality is handled through a serverless form provider rather than a custom backend.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/hritikbytes/sakhiniwas-portal.git
+   cd sakhiniwas-portal
+   ```
 
-```text
-User
-  │
-  ▼
-Inquiry Form
-  │
-  ▼
-Formspree
-  │
-  ▼
-Submission Processing
-  │
-  ▼
-Configured Recipient
-```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-This approach avoids maintaining a dedicated backend for a simple contact and inquiry use case.
+3. **Watch Tailwind CSS changes during development:**
+   ```bash
+   npm run dev
+   ```
 
----
+4. **Build Tailwind CSS for production:**
+   ```bash
+   npm run build
+   ```
 
-## 🎞️ Animation Architecture
-
-A major focus of the project was creating visually rich interactions without continuously running JavaScript animation loops.
-
-### Infinite Marquee
-
-The testimonial section uses CSS keyframes to continuously translate content across the viewport.
-
-The animation combines CSS transforms, keyframe timing, duplicated content, and masking techniques to create a continuous scrolling effect with faded edges.
-
-### Why CSS Instead of JavaScript?
-
-CSS animations are well suited for deterministic visual motion such as:
-
-- Marquees
-- Decorative transitions
-- Hover effects
-- Ambient movement
-
-This keeps animation logic out of the JavaScript runtime and simplifies the implementation.
+5. **View the site:**
+   Open `index.html` directly in your browser, or start a local static server:
+   ```bash
+   npx serve .
+   # or
+   python3 -m http.server 3000
+   ```
 
 ---
 
-## 🎨 Design System
+## Project Status
 
-The visual system is built around Tailwind CSS utilities and reusable styling patterns.
-
-### Visual Techniques
-
-- Glassmorphism
-- Backdrop blur
-- Ambient glow effects
-- Gradient backgrounds
-- Responsive grids
-- Masonry-inspired layouts
-- CSS masking
-- Smooth transitions
-
-### Motion
-
-- Infinite marquees
-- Hover transitions
-- Entrance effects
-- Interactive facility animations
-- Lottie illustrations
-
-The goal was to create a premium accommodation interface while keeping the implementation lightweight and responsive.
+This is an independently developed personal project and live demo. The site is deployed and hosted on Vercel.
 
 ---
 
-## 🛠️ Tech Stack
+## Contact
 
-### Frontend
-
-- **HTML5** — semantic page structure
-- **Tailwind CSS** — utility-first styling and responsive layouts
-- **CSS3** — animations, keyframes, masks, transitions, and custom styling
-
-### Integrations
-
-- **LottieFiles** — lightweight animated illustrations
-- **Formspree** — serverless contact and inquiry handling
-
-### Development
-
-- **Tailwind CLI**
-- **npm**
-- **Git**
-- **GitHub**
-- **VS Code**
-
-### Deployment
-
-- **Vercel**
-
----
-
-## 📁 Project Structure
-
-```text
-sakhiniwas-portal/
-│
-├── screenshots/
-│   ├── home.png
-│   └── mobile.png
-│
-├── src/
-│   └── ...
-│
-├── public/
-│   └── ...
-│
-├── index.html
-├── package.json
-├── tailwind.config.*
-├── postcss.config.*
-├── LICENSE
-└── README.md
-```
-
----
-
-## 📦 Installation & Setup
-
-### Prerequisites
-
-- Node.js
-- npm
-- Git
-
-### 1. Clone the repository
-
-    git clone https://github.com/hritikbytes/sakhiniwas-portal.git
-    cd sakhiniwas-portal
-
-### 2. Install dependencies
-
-    npm install
-
-### 3. Start the development environment
-
-    npm run dev
-
-The exact development command depends on the scripts configured in `package.json`.
-
-### 4. Build for production
-
-    npm run build
-
----
-
-## 💡 Technical Challenges & Learning
-
-### 1. Building a Rich UI Without React
-
-One of the main goals of this project was creating a modern, highly interactive interface without depending on a component framework.
-
-This required a stronger understanding of:
-
-- Semantic HTML
-- CSS layout systems
-- Tailwind utility composition
-- CSS variables
-- Responsive breakpoints
-- DOM behaviour
-- CSS animation
-
-The project demonstrates that a polished interface does not necessarily require a JavaScript framework.
-
-### 2. CSS-Only Infinite Marquee
-
-The testimonial carousel was implemented using CSS animation rather than JavaScript timers.
-
-The challenge was creating a continuous visual loop without noticeable jumps at the end of the animation cycle.
-
-CSS transforms, duplicated content, keyframe timing, and masking were combined to create the effect.
-
-### 3. Responsive Masonry-Style Layouts
-
-The page uses content-heavy sections that need to maintain visual hierarchy across significantly different screen widths.
-
-Responsive CSS layouts were used to change positioning, spacing, sizing, and content flow across breakpoints rather than treating mobile as a scaled-down desktop version.
-
-### 4. Serverless Form Integration
-
-Rather than introducing a custom backend for a relatively simple inquiry form, Formspree was used as a serverless form-handling layer.
-
-This reduced application complexity while keeping the form functional.
-
----
-
-## ⚡ Performance Considerations
-
-The project focuses on keeping the frontend lightweight by:
-
-- Using CSS for deterministic animations
-- Avoiding a large frontend framework
-- Using responsive CSS layouts
-- Keeping JavaScript requirements minimal
-- Using external services only where they provide clear value
-- Avoiding unnecessary client-side animation loops
-
----
-
-## ♿ Responsive & Accessibility Considerations
-
-The interface was designed with responsive behaviour across desktop and mobile viewports.
-
-Key considerations include:
-
-- Semantic HTML structure
-- Responsive typography
-- Mobile-friendly spacing
-- Touch-friendly interactive elements
-- Responsive navigation
-- Visual hierarchy across breakpoints
-
-Accessibility can be further improved through expanded keyboard navigation, contrast auditing, and automated accessibility testing.
-
----
-
-## 🛣️ Future Improvements
-
-- [ ] Add light/dark theme support
-- [ ] Add interactive location/map section
-- [ ] Add room availability and booking workflow
-- [ ] Add backend-driven inquiry management
-- [ ] Add form validation and improved feedback states
-- [ ] Add automated accessibility testing
-- [ ] Add performance monitoring
-- [ ] Improve SEO metadata and structured data
-- [ ] Add automated frontend testing
-
-These represent potential future improvements rather than functionality currently implemented.
-
----
-
-## 📊 Project Status
-
-**Status:** Personal project / deployed demo
-
-Sakhi Niwas is an independently developed frontend project created to explore responsive web design, Tailwind CSS, CSS animation systems, third-party integrations, and lightweight frontend architecture.
-
-The application is deployed on Vercel for demonstration purposes.
-
----
-
-## 👨‍💻 Developer
-
-**Hritik Sharma**
-
-Web Developer focused on React, Next.js, TypeScript, and modern full-stack web development.
-
+- **Developer:** Hritik Sharma
 - **GitHub:** [@hritikbytes](https://github.com/hritikbytes)
-- **LinkedIn:** [linkedin.com/in/hritiksharma0608](https://linkedin.com/in/hritiksharma0608/)
-- **Email:** [hritiksharma.0608@gmail.com](mailto:hritiksharma.0608@gmail.com)
-
----
-
-<div align="center">
-
-**Built independently by Hritik Sharma**
-
-[Live Demo](https://sakhiniwas-portal.vercel.app/)
-
-</div>
+- **LinkedIn:** [Hritik Sharma](https://www.linkedin.com/in/hritiksharma0608/)
+- **Email:** hritiksharma.0608@gmail.com

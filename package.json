@@ -1,17 +1,13 @@
 {
-  "name": "hostelwebsite",
+  "name": "sakhiniwas-portal",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Website and accommodation portal for Sakhi Niwas girls' hostel in Ranchi, Jharkhand.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./src/output.css"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Hritik Sharma",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "tailwindcss": "^4.1.18"
   },
