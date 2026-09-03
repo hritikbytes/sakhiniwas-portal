@@ -7,13 +7,10 @@
   --font-lato: "Lato", sans-serif;
 }
 
-/* Global background grid overlay (Racepoint-style) */
+/* Background vertical grid overlay */
 :root {
-  --grid-bg: #f6f1ef; /* base background */
-  --grid-line: rgba(239, 68, 68, 0.18); /* vertical line color */
-  --grid-row: rgba(239, 68, 68, 0.08); /* horizontal line color */
-  --grid-col-width: 96px; /* column spacing */
-  --grid-row-height: 72px; /* row spacing */
+  --grid-bg: #f6f1ef;
+  --grid-col-width: 96px;
 }
 
 html,
@@ -25,21 +22,83 @@ body {
   background: var(--grid-bg);
 }
 
-/* The overlay */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.3; /* overall grid visibility */
+  opacity: 0.3;
 
-  background-image:
-    /* vertical columns */ repeating-linear-gradient(
+  background-image: repeating-linear-gradient(
     to right,
     rgba(239, 68, 68, 0.1) 0px,
     rgba(239, 68, 68, 0.1) 40px,
     transparent 40px,
     transparent var(--grid-col-width)
   );
+}
+
+/* Hero text fade-in entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animation-delay-150 {
+  animation-delay: 0.15s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-450 {
+  animation-delay: 0.45s;
+}
+
+/* Testimonial marquee with soft edge fade */
+.mask-gradient {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }

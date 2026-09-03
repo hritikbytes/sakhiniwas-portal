@@ -233,52 +233,6 @@
           </div>
         </section>
 
-        <!-- CSS for custom animations (inline for simplicity) -->
-        <style>
-          @keyframes blob {
-            0% {
-              transform: translate(0px, 0px) scale(1);
-            }
-            33% {
-              transform: translate(30px, -50px) scale(1.1);
-            }
-            66% {
-              transform: translate(-20px, 20px) scale(0.9);
-            }
-            100% {
-              transform: translate(0px, 0px) scale(1);
-            }
-          }
-          .animate-blob {
-            animation: blob 7s infinite;
-          }
-          .animation-delay-2000 {
-            animation-delay: 2s;
-          }
-          @keyframes fadeInUp {
-            from {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-          .animate-fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-            opacity: 0;
-          }
-          .animation-delay-150 {
-            animation-delay: 0.15s;
-          }
-          .animation-delay-300 {
-            animation-delay: 0.3s;
-          }
-          .animation-delay-450 {
-            animation-delay: 0.45s;
-          }
-        </style>
         <section class="max-w-7xl mx-auto px-4 py-8">
           <!-- Section Header -->
           <div
@@ -304,12 +258,9 @@
             </a>
           </div>
 
-          <!-- Collage Grid (Bento/Masonry Style) -->
-          <!-- We use a 12-column grid. Each column is 4 'units' wide on LG screens. -->
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 auto-rows-[180px]"
           >
-            <!-- 1. Top Left (Short: Span 2 Rows) -->
             <div
               class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-1 lg:row-start-1 row-span-2 rounded-[32px] overflow-hidden"
             >
@@ -320,8 +271,6 @@
               />
             </div>
 
-            <!-- 2. Top Center (Tall: Span 3 Rows) -->
-            <!-- This dominates the center -->
             <div
               class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-5 lg:row-start-1 row-span-3 md:row-span-2 lg:row-span-3 rounded-[32px] overflow-hidden"
             >
@@ -332,7 +281,6 @@
               />
             </div>
 
-            <!-- 3. Top Right (Short: Span 2 Rows) -->
             <div
               class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-9 lg:row-start-1 row-span-2 rounded-[32px] overflow-hidden"
             >
@@ -343,8 +291,6 @@
               />
             </div>
 
-            <!-- 4. Bottom Left (Tall: Span 3 Rows) -->
-            <!-- Explicit col-start-1 to keep it in col 1 under item 1 -->
             <div
               class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-1 lg:row-start-3 row-span-3 md:row-span-2 lg:row-span-3 rounded-[32px] overflow-hidden"
             >
@@ -355,8 +301,6 @@
               />
             </div>
 
-            <!-- 5. Bottom Center (Short: Span 2 Rows) -->
-            <!-- Explicit col-start-5 to keep it in col 2 under item 2 -->
             <div
               class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-5 lg:row-start-4 row-span-2 rounded-[32px] overflow-hidden"
             >
@@ -367,8 +311,6 @@
               />
             </div>
 
-            <!-- 6. Bottom Right (Tall: Span 3 Rows) -->
-            <!-- Explicit col-start-9 to keep it in col 3 under item 3 -->
             <div
               class="group relative col-span-1 md:col-span-1 lg:col-span-4 lg:col-start-9 lg:row-start-3 row-span-2 md:row-span-2 lg:row-span-3 rounded-[32px] overflow-hidden"
             >
@@ -669,9 +611,7 @@
                 </div>
               </div>
 
-              <!-- DUPLICATE SET FOR LOOP (Exact copy of above) -->
-
-              <!-- Card 1 Copy -->
+              <!-- Duplicate set to enable infinite marquee scroll -->
               <div
                 class="w-[350px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-[32px] shadow-sm border border-slate-100 flex flex-col justify-between"
               >
@@ -699,7 +639,6 @@
                 </div>
               </div>
 
-              <!-- Card 2 Copy -->
               <div
                 class="w-[350px] md:w-[400px] flex-shrink-0 bg-slate-900 p-8 rounded-[32px] shadow-xl flex flex-col justify-between relative overflow-hidden text-white"
               >
@@ -730,7 +669,6 @@
                 </div>
               </div>
 
-              <!-- Card 3 Copy -->
               <div
                 class="w-[350px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-[32px] shadow-sm border border-slate-100 flex flex-col justify-between"
               >
@@ -758,7 +696,6 @@
                 </div>
               </div>
 
-              <!-- Card 4 Copy -->
               <div
                 class="w-[350px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-[32px] shadow-sm border border-slate-100 flex flex-col justify-between"
               >
@@ -788,45 +725,6 @@
             </div>
           </div>
 
-          <!-- Inline Styles for Animation (Simulating Tailwind Config) -->
-          <style>
-            .mask-gradient {
-              mask-image: linear-gradient(
-                to right,
-                transparent,
-                black 10%,
-                black 90%,
-                transparent
-              );
-              -webkit-mask-image: linear-gradient(
-                to right,
-                transparent,
-                black 10%,
-                black 90%,
-                transparent
-              );
-            }
-
-            @keyframes scroll {
-              from {
-                transform: translateX(0);
-              }
-
-              to {
-                transform: translateX(-50%);
-              }
-
-              /* Move exactly half way because the second half is a duplicate of the first */
-            }
-
-            .animate-scroll {
-              animation: scroll 40s linear infinite;
-            }
-
-            .animate-scroll:hover {
-              animation-play-state: paused;
-            }
-          </style>
         </section>
         <section class="max-w-7xl mx-auto px-4 py-24" id="rooms">
           <div class="text-center mb-16">

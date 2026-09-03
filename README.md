@@ -2,91 +2,52 @@
 
 A responsive multi-page website and accommodation brochure for Sakhi Niwas, a student and working women's hostel based in Ranchi, Jharkhand.
 
-**Live Demo:** [https://sakhiniwas-portal.vercel.app](https://sakhiniwas-portal.vercel.app)
-
----
-
-## Preview
+**Live Demo:** [sakhiniwas-portal.vercel.app](https://sakhiniwas-portal.vercel.app)
 
 | Desktop Home | Mobile View |
 |:---:|:---:|
 | ![Landing Page](./screenshots/home.png) | ![Mobile Facilities](./screenshots/mobile.png) |
 
----
+## What this project is
 
-## Overview
+I built this site as a clean, responsive web presence for a local hostel. It lets prospective residents check room options (twin and triple sharing), explore facilities through animated cards, browse photos, locate the campus via an embedded map, and send direct enquiries via WhatsApp or the contact form.
 
-This project is a digital brochure and enquiry portal built to showcase the hostel's rooms, facilities, location, and student life. Visitors can check accommodation rates, see animated amenities, view photos, get map directions, and submit an enquiry directly to the hostel management.
+### Pages
+- **Home (`index.html`)**: Overview of the hostel, photo collage, key benefits, student review marquee, room rates, and location map.
+- **Rooms (`rooms.html`)**: Pricing, inclusions, and amenity comparisons between Double Comfort and Triple Social rooms.
+- **Facilities (`facilities.html`)**: Showcase of 12 hostel amenities (24/7 CCTV, security guard, doctor on call, RO water, WiFi, etc.) with animated Lottie vector icons.
+- **Gallery (`gallery.html`)**: Visual tour of living spaces, study areas, and community life.
+- **Contact (`contact.html`)**: Location details, direct phone/WhatsApp quick actions, and a Formspree-backed enquiry form.
 
-### Pages & Sections
-- **Home (`index.html`)**: Hero presentation, photo collage, highlight cards, CSS marquee testimonials, room pricing preview, and Google Maps embed.
-- **Rooms (`rooms.html`)**: Detailed breakdowns for Double Sharing (₹12,500/mo) and Triple Sharing (₹10,000/mo) accommodations including inclusions and amenities.
-- **Facilities (`facilities.html`)**: Grid of 12 hostel amenities (24/7 CCTV, doctor on call, RO water, WiFi, power backup, etc.) animated with Lottie JSON players.
-- **Gallery (`gallery.html`)**: Bento-style photo grid of hostel living spaces and student activities.
-- **Contact (`contact.html`)**: Contact details, direct WhatsApp/Call links, and a functional enquiry form connected to Formspree.
+## Tech Stack & Notable Details
 
----
+- **Static Multi-Page HTML + Tailwind CSS v4:** Built without a heavyweight framework like React. For an accommodation brochure and enquiry site, static HTML with Tailwind CLI keeps the bundle size negligible and loading instant.
+- **CSS-Only Testimonial Marquee:** The reviews on the home page use a pure CSS `@keyframes` transform over duplicate cards with a `mask-image` gradient for faded edges, pausing on hover without any JavaScript scroll listeners.
+- **Lottie Vector Animations:** Facility cards use `@lottiefiles/lottie-player` web components to play lightweight JSON vector animations.
+- **Accessible Mobile Navigation:** A minimal vanilla JavaScript handler in `script.js` manages mobile hamburger toggling, ARIA attributes, escape-key dismiss, and outside-click closing.
+- **Formspree:** Used for form submissions on the contact page without needing a dedicated backend server.
+- **Hosting:** Hosted on Vercel with automatic builds configured through `vercel.json`.
 
-## Tech Stack
+## Local Development
 
-- **Markup & Layout:** HTML5 (multi-page structure)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) via `@tailwindcss/cli`
-- **Typography:** Google Fonts (*Lato* and *Satisfy*)
-- **Scripting:** Vanilla JavaScript (`script.js` for mobile menu toggle and accessibility)
-- **Animations:** [LottieFiles Web Player](https://lottiefiles.com/) for lightweight SVG vector animations
-- **Form Handling:** [Formspree](https://formspree.io/) for serverless form submissions
-- **Deployment:** [Vercel](https://vercel.com/) (automatic builds configured via `vercel.json`)
+```bash
+# Clone the repository
+git clone https://github.com/hritikbytes/sakhiniwas-portal.git
+cd sakhiniwas-portal
 
----
+# Install Tailwind dependencies
+npm install
 
-## Implementation Details
+# Watch styles during development
+npm run dev
 
-- **Static Multi-Page Architecture:** For an informational brochure and booking enquiry site, static HTML with Tailwind CSS delivers instant page loads and zero JavaScript bundle overhead compared to a heavy client-side SPA.
-- **CSS-Only Testimonial Marquee:** The resident reviews on the home page use a pure CSS `@keyframes` translate animation across duplicate card sets. A CSS `mask-image` gradient creates smooth edge fade-outs, and the marquee pauses on `:hover`.
-- **Accessible Mobile Navigation:** A lightweight vanilla JavaScript toggle manages `aria-expanded` and `aria-hidden` attributes, closes when tapping outside or pressing Escape, and automatically hides after clicking a link.
+# Build production CSS
+npm run build
+```
 
----
+To preview, open `index.html` directly in your browser or run `npx serve .` or `python3 -m http.server 3000`.
 
-## Local Setup & Development
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/hritikbytes/sakhiniwas-portal.git
-   cd sakhiniwas-portal
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Watch Tailwind CSS changes during development:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Build Tailwind CSS for production:**
-   ```bash
-   npm run build
-   ```
-
-5. **View the site:**
-   Open `index.html` directly in your browser, or start a local static server:
-   ```bash
-   npx serve .
-   # or
-   python3 -m http.server 3000
-   ```
-
----
-
-## Project Status
-
-This is an independently developed personal project and live demo. The site is deployed and hosted on Vercel.
-
----
-
-## Contact
+## About
 
 - **Developer:** Hritik Sharma
 - **GitHub:** [@hritikbytes](https://github.com/hritikbytes)
