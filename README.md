@@ -1,55 +1,50 @@
-# Sakhi Niwas Hostel Portal
+# Sakhi Niwas
 
-A responsive multi-page website and accommodation brochure for Sakhi Niwas, a student and working women's hostel based in Ranchi, Jharkhand.
+A responsive website for Sakhi Niwas, a student and working women's hostel in Ranchi.
 
-**Live Demo:** [sakhiniwas-portal.vercel.app](https://sakhiniwas-portal.vercel.app)
+**Live:** https://sakhiniwas-portal.vercel.app/
 
-| Desktop Home | Mobile View |
+| Desktop | Mobile |
 |:---:|:---:|
-| ![Landing Page](./screenshots/home.png) | ![Mobile Facilities](./screenshots/mobile.png) |
+| | |
 
-## What this project is
+## What it does
 
-I built this site as a clean, responsive web presence for a local hostel. It lets prospective residents check room options (twin and triple sharing), explore facilities through animated cards, browse photos, locate the campus via an embedded map, and send direct enquiries via WhatsApp or the contact form.
+The site gives prospective residents a quick way to explore the hostel, compare room options, view facilities and photos, check the location, and send an enquiry.
 
-### Pages
-- **Home (`index.html`)**: Overview of the hostel, photo collage, key benefits, student review marquee, room rates, and location map.
-- **Rooms (`rooms.html`)**: Pricing, inclusions, and amenity comparisons between Double Comfort and Triple Social rooms.
-- **Facilities (`facilities.html`)**: Showcase of 12 hostel amenities (24/7 CCTV, security guard, doctor on call, RO water, WiFi, etc.) with animated Lottie vector icons.
-- **Gallery (`gallery.html`)**: Visual tour of living spaces, study areas, and community life.
-- **Contact (`contact.html`)**: Location details, direct phone/WhatsApp quick actions, and a Formspree-backed enquiry form.
+- Room options and pricing
+- Facilities and amenities
+- Photo gallery
+- Embedded location map
+- WhatsApp and phone contact links
+- Enquiry form through Formspree
+- Responsive layout across desktop and mobile
 
-## Tech Stack & Notable Details
+## Built with
 
-- **Static Multi-Page HTML + Tailwind CSS v4:** Built without a heavyweight framework like React. For an accommodation brochure and enquiry site, static HTML with Tailwind CLI keeps the bundle size negligible and loading instant.
-- **CSS-Only Testimonial Marquee:** The reviews on the home page use a pure CSS `@keyframes` transform over duplicate cards with a `mask-image` gradient for faded edges, pausing on hover without any JavaScript scroll listeners.
-- **Lottie Vector Animations:** Facility cards use `@lottiefiles/lottie-player` web components to play lightweight JSON vector animations.
-- **Accessible Mobile Navigation:** A minimal vanilla JavaScript handler in `script.js` manages mobile hamburger toggling, ARIA attributes, escape-key dismiss, and outside-click closing.
-- **Formspree:** Used for form submissions on the contact page without needing a dedicated backend server.
-- **Hosting:** Hosted on Vercel with automatic builds configured through `vercel.json`.
+HTML · Tailwind CSS v4 · JavaScript · Lottie · Formspree
 
-## Local Development
+## A couple of things I worked on
 
-```bash
-# Clone the repository
-git clone https://github.com/hritikbytes/sakhiniwas-portal.git
-cd sakhiniwas-portal
+The testimonial section uses a CSS-only marquee. The cards are duplicated and moved with `@keyframes`, with the animation pausing on hover. No JavaScript scroll listener is needed.
 
-# Install Tailwind dependencies
-npm install
+The mobile menu is handled with a small vanilla JavaScript module. It takes care of opening/closing the menu, Escape key handling, outside clicks, and the relevant ARIA attributes.
 
-# Watch styles during development
-npm run dev
+The facility illustrations use Lottie web components, while Formspree handles the enquiry form without needing a separate backend.
 
-# Build production CSS
-npm run build
-```
+## Run locally
 
-To preview, open `index.html` directly in your browser or run `npx serve .` or `python3 -m http.server 3000`.
+    git clone https://github.com/hritikbytes/sakhiniwas-portal.git
+    cd sakhiniwas-portal
+    npm install
+    npm run dev
 
-## About
+`npm run dev` watches the Tailwind source and rebuilds the CSS.
 
-- **Developer:** Hritik Sharma
-- **GitHub:** [@hritikbytes](https://github.com/hritikbytes)
-- **LinkedIn:** [Hritik Sharma](https://www.linkedin.com/in/hritiksharma0608/)
-- **Email:** hritiksharma.0608@gmail.com
+To preview the site locally, open `index.html` or use a local static server such as:
+
+    npx serve .
+
+## Status
+
+Personal project / deployed demo.
